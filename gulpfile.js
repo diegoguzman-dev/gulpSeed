@@ -51,7 +51,10 @@ gulp.task('server', function(next) {
 
 gulp.task('watch', ['server'], function() {
   livereload.listen();
-  gulp.watch('*.html').on('change', livereload.changed);
+
+  gulp.watch(paths.css + '/*.css').on('change', livereload.changed);
+
+  gulp.watch(paths.html.dist).on('change', livereload.changed);
 
   gulp.watch(paths.sass, ['sass']).on('change', function(file){
     fileChangedMsg(file);
@@ -59,3 +62,6 @@ gulp.task('watch', ['server'], function() {
 });
 
 gulp.task('default', ['server', 'watch']);
+
+
+console.log(paths.html.dist);
