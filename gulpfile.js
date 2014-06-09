@@ -30,7 +30,8 @@ function prettyPath(path){
   return fp.relative(__dirname, path);
 }
 function handleError(err) {
-  console.log(err.toString());
+  console.log('\u0007');
+  console.log(err.toString() + '\n ' + chalk.bgMagenta('gulp is waiting...'));
   this.emit('end');
 }
 
