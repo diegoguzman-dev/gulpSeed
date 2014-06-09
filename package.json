@@ -1,0 +1,12 @@
+{
+  "name" : "very-basic-gulp",
+  "version" : "0.0.0",
+  "dependencies": {
+    "chalk" : "latest",
+    "connect" : "latest",
+  	"gulp" : "latest",
+    "gulp-autoprefixer" : "latest",
+  	"gulp-livereload" : "latest",
+    "gulp-ruby-sass" : "latest"
+  }
+}
