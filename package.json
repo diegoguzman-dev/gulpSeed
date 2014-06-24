@@ -7,6 +7,7 @@
   	"gulp" : "latest",
     "gulp-autoprefixer" : "latest",
   	"gulp-livereload" : "latest",
-    "gulp-ruby-sass" : "latest"
+    "gulp-ruby-sass" : "latest",
+    "serve-static" : "latest"
   }
 }
