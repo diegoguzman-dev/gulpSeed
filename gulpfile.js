@@ -5,7 +5,8 @@ var gulp = require('gulp'),
     sass = require('gulp-ruby-sass'),
     livereload = require('gulp-livereload'),
       connect = require('connect'),
-      server = connect();
+      server = connect(),
+      serveStatic = require('serve-static'),
     prefix = require('gulp-autoprefixer');
 
 var paths = {
